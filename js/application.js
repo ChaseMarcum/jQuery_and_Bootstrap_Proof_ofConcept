@@ -6,9 +6,9 @@ $(document).ready(function () {
     var showPalettes = fetch.bind(null, 'palettes');
     var showPatterns = fetch.bind(null, 'patterns');
 
-    $('#showColors').on('click', showColors);
-    $('#showPalettes').on('click', showPalettes);
-    $('#showPatterns').on('click', showPatterns);
+    $('.showColors').on('click', showColors);
+    $('.showPalettes').on('click', showPalettes);
+    $('.showPatterns').on('click', showPatterns);
 
     function fetch(resource) {
         console.log('Fetching');
@@ -22,6 +22,7 @@ $(document).ready(function () {
                }
         );
     }
+
 });
 
 function resourceResponse(result) {
@@ -33,8 +34,12 @@ function resourceResponse(result) {
 }
 
 function createItem(item) {
-    return  '<div class="item">' +
-        '<div class="title">' + item.title + '</div>' +
+    return  '<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6"><div class="thumbnail">' +
         '<img class="image" src="' + item.imageUrl + '"/>' +
-        '</div>';
+        '<div class="title caption"><h4 style="text-align: center">' + item.title + '</h4></div>' +
+        '</div></div>';
+}
+
+function updateCarouselBackground() {
+
 }

@@ -1,18 +1,15 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+
+
+/* CUSTOMIZE CSS
+-------------------------------------------------- */
 
 body {
     padding-bottom: 40px;
-    color: #5a5a5a;
+    background-image: url('../img/grid_03.jpg');
 }
 
-
-
-/* CUSTOMIZE THE NAVIGATION BAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
     position: absolute;
     top: 0;
@@ -34,31 +31,27 @@ body {
     width: auto;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-    height: 500px;
-    margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
+.button-row {
+    padding: 0 0 1em 0;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 500px;
-    background-color: #777;
+.jumbotron {
+    text-align: center;
+    background: #ababab;
 }
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
+
+.jumbotron h1 {
+    padding: 1em 0 0.5em;
+}
+
+.thumbnail {
+    background-color: #5F5F5F;
+    border: 3px solid #DDD;
+}
+
+.thumbnail .caption {
+    padding: 0;
+    color: #DDD;
 }
 
 /* RESPONSIVE CSS
